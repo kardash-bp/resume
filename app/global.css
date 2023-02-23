@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@300;400&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:wght@300;400&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-yellow text-4xl md:text-6xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+  p {
+    @apply text-base;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-qs;
+  }
+  html {
+    @apply font-roboto bg-black;
+  }
+}
+
+.icons-contact {
+  @apply text-2xl m-2;
+}
+
+section {
+  @apply mb-10;
+}
+
+main h2 {
+  @apply uppercase text-black;
+}
+
+.btn {
+  @apply w-1/2 h-12 text-black uppercase text-xl px-4 transition duration-300 ease-in-out hover:text-yellow hover:bg-black;
+}
+
+.skill {
+  @apply bg-green-light text-lg mt-2 mr-2 py-2 px-3 w-fit rounded-md;
+}
